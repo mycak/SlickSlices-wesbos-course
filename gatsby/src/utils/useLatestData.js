@@ -6,7 +6,6 @@ export default function useLatestData() {
   const [hotSlices, setHotSlices] = useState();
   const [slicemasters, setSlicemasters] = useState();
   useEffect(function () {
-    console.log('FETCHING DATA');
     fetch(process.env.GATSBY_GRAPHQL_ENDPOINT, {
       method: 'POST',
       headers: {
